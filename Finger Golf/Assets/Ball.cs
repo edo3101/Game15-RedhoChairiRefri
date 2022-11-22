@@ -48,7 +48,7 @@ public class Ball : MonoBehaviour
     IEnumerator DelayedTeleport()
     {
         isTeleporting = true;
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         rb.isKinematic=true;
         this.transform.position = lastPosition;
         isTeleporting=false;
